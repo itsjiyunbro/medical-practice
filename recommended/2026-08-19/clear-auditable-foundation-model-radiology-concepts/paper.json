@@ -1,0 +1,15 @@
+{
+  "id": "clear-auditable-foundation-model-radiology-concepts",
+  "title": "CLEAR: an auditable foundation model for radiology grounded in clinical concepts",
+  "authors": ["Tianyu Han", "Riga Wu", "Yu Tian", "Firas Khader", "Lisa C. Adams", "Keno K. Bressem", "Christos Davatzikos", "Jakob Nikolas Kather", "Li Shen", "David A. Mankoff", "Eduardo Mortani Barbosa", "Daniel Truhn"],
+  "venue": "Nature Biomedical Engineering",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41551-026-01741-4",
+  "abstract": "'Black box' deep learning models for medical image interpretation limit clinical trust and analysis of performance degradation. Here we introduce Concept-Level Embeddings for Auditable Radiology (CLEAR), an auditable foundation model based on clinical concepts. Trained on over 0.87 million image-report pairs from 239,391 patients, CLEAR learns a visual representation and projects chest X-rays into a semantically rich space defined by large language model embeddings, making every prediction decomposable into weighted contributions from individual radiological observations. External validation on four large, physician-annotated datasets from the United States, Europe and Asia shows that CLEAR not only achieves state-of-the-art classification performance but also enables applications: auditable zero-shot pathology detection, systematic identification of radiological confounders and the creation of expert-level concept bottleneck models from data-driven concepts. By integrating clinical knowledge directly into its reasoning process, CLEAR offers a framework for robust model auditing, safer deployment and enhanced physician-AI collaboration, advancing towards trustworthy medical AI.",
+  "axes": ["기관 간 일반화", "설명 가능성"],
+  "takeaway": "임상 개념에 기반한 흉부 X선 파운데이션 모델이 4개 대륙의 외부 검증 코호트에서 최고 수준의 분류 성능과 함께 예측 근거를 소견 단위로 분해해 감사할 수 있음을 보였다.",
+  "relevance": "우리 코호트는 5개 기관(INST01–05, 각 48–62건)에서 수집된 272건의 흉부 X선으로 Infiltration, Atelectasis, Nodule 등 다중 소견 라벨(No Finding 145건 포함)을 갖고 있어, CLEAR가 검증한 다기관·다중 소견 환경과 구조적으로 유사하다.",
+  "caveat": "우리 데이터는 272건 규모의 마스킹된 코호트로 CLEAR의 검증 규모(수십만 환자)에 비해 매우 작아, 동일한 외부 검증 성능을 재현하거나 확인할 수 없다.",
+  "check": "우리 기관 간(INST01–05) 소견 라벨 분포 차이가 CLEAR류의 개념 기반 모델에서 감사 가능한 혼란 변수로 드러날 만큼 큰지 확인해볼 수 있는가?"
+}
