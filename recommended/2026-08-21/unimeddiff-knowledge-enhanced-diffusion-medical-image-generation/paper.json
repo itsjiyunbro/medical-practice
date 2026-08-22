@@ -1,0 +1,15 @@
+{
+  "id": "unimeddiff-knowledge-enhanced-diffusion-medical-image-generation",
+  "title": "UniMedDiff: a knowledge-enhanced diffusion model for medical image generation from clinical reports",
+  "authors": ["Lexuan Liu", "Peng Huang", "Bowen Guo", "Shuyu Liang", "Junhu Fu", "Zixia Zhou", "Yuanyuan Wang", "Yi Guo"],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03135-x",
+  "abstract": "The scarcity of high-quality medical data restricts the advancement of computer-aided diagnosis. Text-to-image (TTI) generation offers a promising solution through controlled and diverse synthesis but is still hindered by noisy data, complex report structures, and varied disease representations. We propose UniMedDiff, a disease-knowledge-enhanced diffusion framework for synthesizing anatomically accurate and pathologically diverse medical images from clinical reports. Trained on noise-filtered image–text pairs, UniMedDiff extracts and aligns concise text embeddings with visual features from lengthy reports, enabling pathology-aware guidance for medical image generation. It facilitates controllable generation by integrating reports and prior disease knowledge into the diffusion process, achieving favorable performance across multiple datasets and evaluation tasks. On chest X-rays (CXRs), UniMedDiff generates diverse CXRs representing 11 pulmonary pathologies from both in-/out-of-distribution reports. Qualitative and quantitative results demonstrate its state-of-the-art performance in generation quality, computational efficiency and factual correctness. UniMedDiff also exhibits utility in downstream tasks, including unimodal classification and cross-modal report generation, achieving near full-data performance by augmenting 1% real data. Its cross-modality generalization is evaluated through dermoscopy and colonoscopy image synthesis. By bridging clinical reports and visual disease patterns, UniMedDiff advances medical image synthesis for diagnostic research and data augmentation.",
+  "axes": ["데이터 부족 보완", "라벨 잡음"],
+  "takeaway": "질환 지식을 활용한 확산 모델로 흉부 X-ray를 포함한 다중 병리 영상을 보고서 텍스트로부터 생성해, 1% 실제 데이터 증강만으로 전체 데이터 학습에 근접한 분류 성능을 달성했다.",
+  "relevance": "우리 코호트는 145건이 No Finding이고 나머지는 Infiltration, Atelectasis, Nodule 등 여러 소견이 드물게 혼재하는 전형적인 롱테일 분포로, 소수 클래스(결절 7건, 기흉 5건 등)에 대한 데이터 증강이 실제로 도움이 될 수 있는 상황이다.",
+  "caveat": "생성 영상의 품질과 하위 분류 성능은 저자들의 벤치마크 기준이며, 우리 기관의 실제 영상 특성(장비, 촬영 자세 등)에서도 동일한 증강 효과가 재현되는지는 확인되지 않는다.",
+  "check": "우리 코호트에서 가장 드문 소견(결절, 기흉 등)에 대해 합성 영상 증강이 실제 분류기 성능을 개선하는지 소규모로 검증해볼 수 있는가."
+}
