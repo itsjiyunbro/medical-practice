@@ -1,0 +1,15 @@
+{
+  "id": "abdomennet-foundation-model-acute-abdomen-triage",
+  "title": "A foundation model for acute abdomen diagnosis stratification and triage on noncontrast computed tomography",
+  "authors": ["Chao Zhu", "Ruipeng Zhang", "Xinyu Song", "Kai Shang", "Yu Lu", "Wenjuan Wu", "Jian Ma", "Yixiao Tang", "Zhongzheng Cao", "Li Shen", "Jianyong Wei", "Lisong Dai"],
+  "venue": "Nature Communications",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41467-026-76634-w",
+  "abstract": "Accurate and timely diagnosis of acute abdominal emergencies remains challenging. Non-contrast computed tomography (NCCT) is often used as an initial imaging modality because of atypical presentations, contraindications to contrast, or resource constraints. Here we present AbdomenNet, a multi-task AI system built on a self-supervised foundation model that detects 11 acute abdominal conditions and performs three risk-stratification subtasks from NCCT images. AbdomenNet is pre-trained on 103,989 NCCT examinations and fine-tuned on 5816 annotated cases. We assess generalizability in 2528 patients from three independent external cohorts, evaluate radiologist performance in a multi-reader multi-case crossover study, and estimate workflow impact using retrospective reconstruction. In external validation, AbdomenNet achieves a macro-average AUROC of 0.919 for five emergent conditions. AI assistance increases radiologists’ mean AUROC from 0.812 to 0.924 and reduces median reading time by 52.5 seconds per case. Workflow reconstruction indicates that AI-driven prioritization could shorten median report turnaround time by 37 minutes. The authors present AbdomenNet, a foundation model for non-contrast computed tomography. It detects 11 acute abdominal conditions, helps identify high-risk cases, improves radiologist accuracy, and may speed emergency reporting.",
+  "axes": ["기관 간 일반화", "판독의-AI 협업"],
+  "takeaway": "다기관 외부 검증과 다중판독자 교차연구를 통해 AI 보조가 응급 복부 CT 판독 정확도와 속도를 모두 개선함을 입증했다.",
+  "relevance": "우리 코호트는 272건 검사, 153명 환자로 다기관 규모는 아니지만 다중 소견 라벨(감염, 무기폐, 결절 등)이 공존하는 구조가 비슷하며, 판독의별 성능 편차를 외부 검증으로 보정하는 접근이 흉부 X-ray 판독 보조 도구 도입 시에도 참고할 수 있다.",
+  "caveat": "본 논문은 복부 CT 대상이며 흉부 단순촬영이 아니어서, 우리 데이터의 소견(무기폐·삼출·결절 등)에 대한 직접적 성능 근거는 제공하지 않는다.",
+  "check": "동일한 다중판독자 교차연구 설계를 흉부 X-ray 다중 소견 분류 과제에 적용했을 때도 판독 시간과 정확도가 함께 개선되는지 확인할 가치가 있다."
+}

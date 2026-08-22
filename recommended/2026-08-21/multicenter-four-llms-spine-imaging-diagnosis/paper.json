@@ -1,0 +1,15 @@
+{
+  "id": "multicenter-four-llms-spine-imaging-diagnosis",
+  "title": "Multicenter evaluation of four large language models for automated spine imaging diagnosis",
+  "authors": ["Haolai Liu", "Hao Zhang", "Haixin Wei", "Yao Wei", "Xiaowen Liu", "Yuanrun Wei", "Tao Liu", "Xiaoyu Tan", "Xuexiao Ma"],
+  "venue": "npj Digital Medicine",
+  "year": 2026,
+  "source": "OpenAlex",
+  "url": "https://doi.org/10.1038/s41746-026-03133-z",
+  "abstract": "Accurate interpretation of spine imaging is essential for clinical decision-making, yet the diagnostic potential of large language models (LLMs) for radiological report analysis remains inadequately evaluated in terms of sample size, multi-model comparison, reproducibility, and cross-institutional generalisability. Here, we conducted a multicentre cohort study using 20,277 authentic clinical spine radiological reports from three teaching hospitals in China, systematically comparing the diagnostic performance, output consistency, and generalisability of four LLMs—GPT-4o, Claude-4, Qwen-3 Max, and DeepSeek-V3.1—across nine modality–region combinations under two input modes (with-option and without-option). All models showed high overall diagnostic performance, with specificity exceeding 90% and negative predictive value exceeding 96%. Cross-institutional validation demonstrated stable recall generalisability, with recall coefficients of variation ranging from 0.7% to 5.0%. However, performance was uneven across the disease spectrum: for low-prevalence conditions, precision declined by 19–42 percentage points, indicating a persistent long-tail diagnostic deficit. Input mode and prompt formulation also produced model-specific shifts in diagnostic behaviour. These findings suggest that LLMs may support report-based spine imaging diagnosis as clinical assistive tools, but deployment should account for disease prevalence, prompt sensitivity, and the need for domain-specific optimisation.",
+  "axes": ["기관 간 일반화", "저빈도 질환 성능"],
+  "takeaway": "3개 기관, 20,277건의 척추 영상 판독문으로 4개 LLM을 비교한 결과, 저빈도 질환에서는 정밀도가 19~42%p까지 떨어지는 롱테일 문제가 공통적으로 나타났다.",
+  "relevance": "우리 코호트도 No Finding 145건 대비 결절(7건), 기흉(5건), 폐기종(4건) 등 저빈도 소견이 다수 존재하는 유사한 불균형 구조이며, 다기관 재현성 문제를 다룬 이 논문의 방법론은 흉부 영상 판독 보조 시스템 평가에도 적용될 수 있다.",
+  "caveat": "이 연구는 척추 영상 판독문 기반 진단이며 흉부 X-ray 영상 자체의 분류 성능에 대한 근거는 아니다.",
+  "check": "동일한 저빈도 질환 정밀도 저하 현상이 우리 코호트의 결절·기흉 등 소수 클래스 소견에서도 재현되는지 확인이 필요하다."
+}
